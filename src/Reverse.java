@@ -9,10 +9,14 @@ public class Reverse {
 
 
         String Input = JOptionPane.showInputDialog("Reverse a word!");
+        Input = Input.toLowerCase();
         String RInput = reverse(Input);
         System.out.println(RInput);
         if (Input.equals(RInput)){
             System.out.println("PALINDROME!!");
+        }
+        else {
+            System.out.println("Not a palindrome???, so not very cool");
         }
 
 
